@@ -1,4 +1,6 @@
+/* Universal Clean Styling */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+body { background-color: #fcfcfc; color: #333; line-height: 1.6; }
 
 header {
     display: flex;
@@ -6,23 +8,52 @@ header {
     align-items: center;
     padding: 20px 8%;
     background: #ffffff;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid #eef2f5;
+    position: sticky; top: 0; z-index: 100;
 }
-.logo { font-weight: bold; font-size: 24px; color: #20438C; letter-spacing: 1px; }
-nav a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
-.apply-nav { background: #20438C; color: white; padding: 8px 18px; border-radius: 4px; }
+.logo { font-weight: 800; font-size: 26px; color: #163265; letter-spacing: 1.5px; }
+nav a { text-decoration: none; color: #4a5568; margin-left: 25px; font-weight: 600; font-size: 15px; transition: 0.3s; }
+nav a:hover { color: #163265; }
+.apply-nav { background: #2b6cb0; color: white !important; padding: 10px 20px; border-radius: 5px; }
+.apply-nav:hover { background: #2b4c7e; }
 
+/* Large Vibe Header Banner */
 .hero {
-    background: linear-gradient(rgba(32, 67, 140, 0.4), rgba(0, 0, 0, 0.5)), url('https://unsplash.com') no-repeat center center/cover;
-    height: 75vh;
+    background: linear-gradient(rgba(22, 50, 101, 0.65), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
     display: flex;
     align-items: center;
     padding: 0 8%;
 }
-.hero-overlay h1 { color: white; font-size: 52px; max-width: 600px; margin-bottom: 20px; font-weight: 700; }
-.hero-overlay p { color: #f4f4f4; font-size: 18px; max-width: 500px; margin-bottom: 30px; line-height: 1.6; }
-.cta-btn { background: #ffffff; color: #20438C; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 4px; }
+.hero-overlay h1 { color: white; font-size: 48px; max-width: 750px; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.5px; }
+.hero-overlay p { color: #e2e8f0; font-size: 18px; max-width: 650px; margin-bottom: 35px; }
+.cta-btn { background: #ffffff; color: #163265; padding: 14px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+.cta-btn:hover { background: #e2e8f0; }
 
-.stats { display: flex; justify-content: space-around; background: #20438C; color: white; padding: 50px 8%; text-align: center; }
-.stat-box h2 { font-size: 42px; margin-bottom: 5px; color: #ffffff; }
-.stat-box p { font-size: 14px; opacity: 0.8; letter-spacing: 1px; }
+/* Asymmetric Stats Block */
+.stats { display: flex; justify-content: space-around; background: #163265; color: white; padding: 45px 8%; text-align: center; }
+.stat-box h2 { font-size: 44px; margin-bottom: 5px; color: #63b3ed; font-weight: 700; }
+.stat-box p { font-size: 15px; text-transform: uppercase; letter-spacing: 1px; color: #e2e8f0; }
+
+/* Detailed Context Content Info */
+.details-section { padding: 70px 8%; background: #ffffff; text-align: center; }
+.details-section h2 { font-size: 32px; color: #163265; margin-bottom: 15px; }
+.details-section > p { max-width: 800px; margin: 0 auto 50px auto; color: #718096; font-size: 17px; }
+.features-grid { display: flex; gap: 30px; justify-content: center; margin-top: 20px; }
+.feature-card { background: #f7fafc; padding: 35px 25px; border-radius: 8px; flex: 1; text-align: left; border-top: 4px solid #2b6cb0; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+.feature-card h3 { color: #163265; margin-bottom: 12px; font-size: 20px; }
+.feature-card p { color: #4a5568; font-size: 15px; }
+
+/* Footer Clean Content */
+footer { background: #1a202c; color: #a0aec0; padding: 40px 8%; text-align: center; font-size: 15px; border-top: 3px solid #2b6cb0; }
+footer p { margin-bottom: 8px; }
+footer strong { color: #fff; }
+.copyright { margin-top: 25px; font-size: 13px; color: #718096; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header, .features-grid, .stats { flex-direction: column; gap: 20px; text-align: center; }
+    .feature-card { text-align: center; }
+    .hero-overlay h1 { font-size: 32px; }
+    nav a { margin: 10px; display: inline-block; }
+}
