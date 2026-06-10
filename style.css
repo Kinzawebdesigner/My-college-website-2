@@ -1,56 +1,20 @@
-/* Universal Clean Design & Premium Fonts like Pomona */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif, 'Segoe UI', sans-serif; }
-body { background-color: #ffffff; color: #1a1a1a; line-height: 1.7; }
+/* Library Section Styles (Pomona Inspired) */
+.library-section { padding: 90px 8%; background: #f8fafc; text-align: center; border-top: 1px solid #e2e8f0; }
+.section-tag { font-size: 12px; font-weight: bold; text-transform: uppercase; color: #e53e3e; letter-spacing: 2px; display: block; margin-bottom: 10px; font-family: 'Segoe UI', sans-serif; }
+.library-section h2 { font-size: 38px; color: #20438C; margin-bottom: 15px; font-family: 'Times New Roman', serif; }
+.section-desc { max-width: 750px; margin: 0 auto 50px auto; color: #4a5568; font-size: 17px; }
 
-/* Sticky Premium Navigation (Pomona Vibe) */
-header {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 24px 8%; background: #ffffff; border-bottom: 1px solid #e2e8f0;
-    position: sticky; top: 0; z-index: 1000;
-}
-.logo { font-weight: 800; font-size: 26px; color: #20438C; letter-spacing: 2px; font-family: inherit; }
-nav a { text-decoration: none; color: #4a5568; margin-left: 28px; font-weight: 600; font-size: 15px; transition: 0.2s; }
-nav a:hover { color: #20438C; }
-.apply-nav { background: #20438C; color: white !important; padding: 10px 22px; border-radius: 0px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-.apply-nav:hover { background: #152c5e; }
+.library-grid { display: flex; gap: 35px; justify-content: center; }
+.library-card { background: #ffffff; padding: 40px 30px; border-radius: 0px; flex: 1; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-bottom: 4px solid #20438C; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+.card-badge { position: absolute; top: 20px; right: 20px; background: #edf2f7; color: #20438C; font-size: 11px; font-weight: bold; padding: 4px 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.library-card h3 { color: #1a1a1a; font-size: 22px; margin-bottom: 5px; font-family: 'Times New Roman', serif; padding-right: 60px; }
+.author { font-style: italic; color: #718096; font-size: 14px; margin-bottom: 15px; }
+.desc { color: #4a5568; font-size: 15px; margin-bottom: 25px; line-height: 1.6; }
 
-/* Matte Dark Overlay & Large Typography (Pomona Style) */
-.hero {
-    background: linear-gradient(rgba(21, 44, 94, 0.55), rgba(15, 23, 42, 0.75)), url('https://unsplash.com') no-repeat center center/cover;
-    height: 75vh; display: flex; align-items: center; padding: 0 8%;
-}
-.hero-overlay h1 { color: white; font-size: 54px; max-width: 850px; margin-bottom: 22px; font-weight: 700; font-family: 'Times New Roman', serif; line-height: 1.1; }
-.hero-overlay p { color: #f1f5f9; font-size: 19px; max-width: 700px; margin-bottom: 40px; font-family: 'Segoe UI', sans-serif; opacity: 0.9; }
-.cta-btn { background: #ffffff; color: #20438C; padding: 16px 36px; text-decoration: none; font-weight: bold; border-radius: 0px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
-.cta-btn:hover { background: #20438C; color: white; }
+/* Read Button Like Pomona Link UI */
+.read-btn { text-decoration: none; color: #20438C; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #20438C; padding-bottom: 4px; display: inline-block; width: max-content; transition: 0.2s; }
+.read-btn:hover { color: #e53e3e; border-bottom-color: #e53e3e; }
 
-/* Minimalist Clean Counters Row */
-.stats { display: flex; justify-content: space-around; background: #20438C; color: white; padding: 55px 8%; text-align: center; }
-.stat-box h2 { font-size: 52px; color: #ffffff; font-weight: bold; font-family: 'Times New Roman', serif; }
-.stat-box p { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #cbd5e1; margin-top: 8px; font-family: 'Segoe UI', sans-serif; }
-
-/* Clean Minimal White Content Layout */
-.details-section { padding: 90px 8%; background: #ffffff; text-align: center; }
-.details-section h2 { font-size: 38px; color: #20438C; margin-bottom: 20px; font-weight: 700; font-family: 'Times New Roman', serif; }
-.details-section > p { max-width: 850px; margin: 0 auto 60px auto; color: #4a5568; font-size: 18px; }
-
-/* Elite Grid Layout Cards (No Border, Clean Shadows) */
-.features-grid { display: flex; gap: 40px; justify-content: center; }
-.feature-card { background: #ffffff; padding: 40px 30px; border-radius: 0px; flex: 1; text-align: left; border-left: 3px solid #20438C; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: 0.3s; }
-.feature-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(32, 67, 140, 0.1); }
-.feature-card h3 { color: #20438C; margin-bottom: 15px; font-size: 22px; font-family: 'Times New Roman', serif; }
-.feature-card p { color: #4a5568; font-size: 15px; }
-
-/* Elite Dark Slate Footer */
-footer { background: #111827; color: #9ca3af; padding: 60px 8% 30px 8%; font-size: 15px; border-top: 4px solid #20438C; }
-footer p { margin-bottom: 12px; }
-footer strong { color: #fff; font-family: 'Times New Roman', serif; font-size: 17px; }
-.copyright { margin-top: 35px; font-size: 13px; color: #6b7280; letter-spacing: 0.5px; }
-
-/* Fully Responsive Breakpoints */
 @media (max-width: 768px) {
-    header, .features-grid, .stats { flex-direction: column; gap: 35px; text-align: center; }
-    .feature-card { text-align: center; border-left: none; border-top: 3px solid #20438C; }
-    .hero-overlay h1 { font-size: 34px; }
-    nav a { margin: 12px; display: inline-block; }
+    .library-grid { flex-direction: column; gap: 30px; }
 }
