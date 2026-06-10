@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    border-bottom: 2px solid #f0f0f0;
+}
+.logo { font-weight: bold; font-size: 24px; color: #20438C; letter-spacing: 1px; }
+nav a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
+.apply-nav { background: #20438C; color: white; padding: 8px 18px; border-radius: 4px; }
+
+.hero {
+    background: linear-gradient(rgba(32, 67, 140, 0.4), rgba(0, 0, 0, 0.5)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+.hero-overlay h1 { color: white; font-size: 52px; max-width: 600px; margin-bottom: 20px; font-weight: 700; }
+.hero-overlay p { color: #f4f4f4; font-size: 18px; max-width: 500px; margin-bottom: 30px; line-height: 1.6; }
+.cta-btn { background: #ffffff; color: #20438C; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 4px; }
+
+.stats { display: flex; justify-content: space-around; background: #20438C; color: white; padding: 50px 8%; text-align: center; }
+.stat-box h2 { font-size: 42px; margin-bottom: 5px; color: #ffffff; }
+.stat-box p { font-size: 14px; opacity: 0.8; letter-spacing: 1px; }
