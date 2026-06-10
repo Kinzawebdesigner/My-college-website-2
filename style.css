@@ -1,87 +1,73 @@
 /* ==========================================================================
-   POMONA COLLEGE ACCENT BRAND PALETTE FOR HAHNEMANN COLLEGE
-   Official Brand Tones: Pomona Deep Blue (#005499) | Sharp Editorial Grid
+   POMONA COLLEGE HIGH-CONTRAST ACCENT COLOR SHEET FOR HAHNEMANN
    ========================================================================== */
 
-/* Universal Clean Academic Baseline */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, Georgia, serif; }
-body { background-color: #ffffff; color: #1a202c; line-height: 1.75; -webkit-font-smoothing: antialiased; }
-
-/* Global Container Rules */
+/* Universal Clean Reset & Serif Headings */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #ffffff; color: #1a202c; font-family: 'Times New Roman', Times, Georgia, serif; line-height: 1.7; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-/* Pomona Navigation Grid Template */
+/* Sticky Header Customization */
 header {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 24px 8%; background: #ffffff; border-bottom: 1px solid #e2e8f0;
-    position: sticky; top: 0; z-index: 1000;
+    padding: 22px 8%; background: #ffffff; border-bottom: 2px solid #e2e8f0;
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
-.logo { font-weight: 800; font-size: 26px; color: #005499; letter-spacing: 2px; text-transform: uppercase; }
-nav a { text-decoration: none; color: #4a5568; margin-left: 30px; font-weight: 600; font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; transition: color 0.2s ease; }
+.logo { font-weight: 900; font-size: 28px; color: #005499; letter-spacing: 2px; }
+nav a { text-decoration: none; color: #4a5568; margin-left: 28px; font-weight: 600; font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; transition: 0.2s; }
 nav a:hover { color: #005499; }
-.apply-nav { background: #005499; color: #ffffff !important; padding: 12px 24px; border-radius: 0px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+.apply-nav { background: #005499; color: #ffffff !important; padding: 10px 22px; border-radius: 0px; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; font-weight: bold; }
 .apply-nav:hover { background: #003d70; }
 
-/* Editorial Hero Banner Layout */
+/* Aesthetic Dark Vibrant Blue Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 84, 153, 0.45), rgba(15, 23, 42, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 84, 153, 0.65), rgba(15, 23, 42, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
     height: 75vh; display: flex; align-items: center; padding: 0 8%;
 }
-.hero-overlay h1 { color: #ffffff; font-size: 56px; max-width: 850px; margin-bottom: 24px; font-weight: 700; line-height: 1.1; }
-.hero-overlay p { color: #f1f5f9; font-size: 20px; max-width: 720px; margin-bottom: 40px; font-family: 'Segoe UI', Arial, sans-serif; opacity: 0.95; font-weight: 300; }
-.cta-btn { background: #ffffff; color: #005499; padding: 16px 36px; text-decoration: none; font-weight: bold; border-radius: 0px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; font-family: 'Segoe UI', sans-serif; }
+.welcome-tag { display: inline-block; color: #93c5fd; font-family: 'Segoe UI', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; font-size: 13px; margin-bottom: 15px; }
+.hero-overlay h1 { color: #ffffff; font-size: 54px; max-width: 850px; margin-bottom: 20px; font-weight: 700; line-height: 1.15; }
+.hero-overlay p { color: #e2e8f0; font-size: 19px; max-width: 700px; margin-bottom: 35px; font-family: 'Segoe UI', sans-serif; opacity: 0.9; font-weight: 300; }
+.cta-btn { background: #ffffff; color: #005499; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 0px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
 .cta-btn:hover { background: #005499; color: #ffffff; }
 
-/* Solid Counter Bands */
-.stats { display: flex; justify-content: space-around; background: #005499; color: #ffffff; padding: 60px 8%; text-align: center; border-top: 4px solid #003d70; }
-.stat-box h2 { font-size: 56px; color: #ffffff; font-weight: bold; }
-.stat-box p { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #e2e8f0; margin-top: 8px; font-family: 'Segoe UI', Arial, sans-serif; font-weight: 600; }
+/* Pomona Solid Blue Counter Row */
+.stats { display: flex; justify-content: space-around; background: #005499; color: #ffffff; padding: 55px 8%; text-align: center; }
+.stat-box h2 { font-size: 54px; color: #ffffff; font-weight: bold; margin-bottom: 5px; }
+.stat-box p { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #bfdbfe; font-family: 'Segoe UI', sans-serif; font-weight: 600; }
 
-/* Core Institutional Content Spacing */
-.details-section { padding: 100px 0; background: #ffffff; text-align: center; border-bottom: 1px solid #edf2f7; }
-.details-section h2 { font-size: 40px; color: #005499; margin-bottom: 20px; font-weight: 700; }
-.details-section > p { max-width: 850px; margin: 0 auto 60px auto; color: #4a5568; font-size: 18px; font-family: 'Segoe UI', Arial, sans-serif; }
+/* Academic Grid Layout & Cards */
+.details-section { padding: 90px 0; background: #ffffff; text-align: center; }
+.details-section h2 { font-size: 38px; color: #005499; margin-bottom: 40px; font-weight: 700; }
+.features-grid { display: flex; gap: 35px; justify-content: center; text-align: left; }
+.feature-card { background: #ffffff; padding: 40px 30px; border-radius: 0px; flex: 1; border-top: 4px solid #005499; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05); }
+.feature-card h3 { color: #005499; margin-bottom: 15px; font-size: 22px; }
+.feature-card p { color: #4a5568; font-size: 15px; font-family: 'Segoe UI', sans-serif; }
 
-/* Borderless Asymmetric Layout Blocks */
-.features-grid { display: flex; gap: 40px; justify-content: center; text-align: left; }
-.feature-card { background: #ffffff; padding: 45px 35px; border-radius: 0px; flex: 1; border-top: 4px solid #005499; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04); transition: transform 0.3s ease; }
-.feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0, 84, 153, 0.08); }
-.feature-card h3 { color: #005499; margin-bottom: 16px; font-size: 24px; }
-.feature-card p { color: #4a5568; font-size: 15px; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.7; }
-
-/* Hahnemann Digital Library & Magazines Section */
-.library-section { padding: 100px 0; background: #f8fafc; text-align: center; border-top: 1px solid #e2e8f0; }
+/* Library System Styling */
+.library-section { padding: 90px 0; background: #f8fafc; text-align: center; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
 .section-tag { font-size: 12px; font-weight: 800; text-transform: uppercase; color: #005499; letter-spacing: 2px; display: block; margin-bottom: 12px; font-family: 'Segoe UI', sans-serif; }
-.library-section h2 { font-size: 40px; color: #005499; margin-bottom: 20px; font-weight: 700; }
-.section-desc { max-width: 780px; margin: 0 auto 60px auto; color: #4a5568; font-size: 18px; font-family: 'Segoe UI', sans-serif; }
-
+.library-section h2 { font-size: 38px; color: #005499; margin-bottom: 15px; font-weight: 700; }
+.section-desc { max-width: 750px; margin: 0 auto 50px auto; color: #4a5568; font-size: 17px; font-family: 'Segoe UI', sans-serif; }
 .library-grid { display: flex; gap: 35px; justify-content: center; text-align: left; }
-.library-card { background: #ffffff; padding: 45px 35px; border-radius: 0px; flex: 1; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border-left: 4px solid #005499; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
-.card-badge { position: absolute; top: 25px; right: 25px; background: #e2e8f0; color: #005499; font-size: 11px; font-weight: 700; padding: 4px 12px; text-transform: uppercase; letter-spacing: 1px; font-family: 'Segoe UI', sans-serif; }
-.library-card h3 { color: #1a202c; font-size: 24px; margin-bottom: 6px; padding-right: 70px; }
-.author { font-style: italic; color: #718096; font-size: 14px; margin-bottom: 18px; font-family: 'Segoe UI', sans-serif; }
-.desc { color: #4a5568; font-size: 15px; margin-bottom: 30px; line-height: 1.7; font-family: 'Segoe UI', sans-serif; }
+.library-card { background: #ffffff; padding: 40px 30px; flex: 1; box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-left: 4px solid #005499; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+.card-badge { position: absolute; top: 20px; right: 20px; background: #e2e8f0; color: #005499; font-size: 11px; font-weight: 700; padding: 4px 10px; text-transform: uppercase; letter-spacing: 1px; font-family: 'Segoe UI', sans-serif; }
+.library-card h3 { color: #1a202c; font-size: 22px; margin-bottom: 5px; }
+.author { font-style: italic; color: #718096; font-size: 14px; margin-bottom: 15px; font-family: 'Segoe UI', sans-serif; }
+.desc { color: #4a5568; font-size: 15px; margin-bottom: 25px; font-family: 'Segoe UI', sans-serif; }
+.read-btn { text-decoration: none; color: #005499; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 2px solid #005499; padding-bottom: 4px; display: inline-block; width: max-content; font-family: 'Segoe UI', sans-serif; }
+.read-btn:hover { color: #003d70; border-bottom-color: #003d70; }
 
-/* Pomona Signature Underline Link Buttons */
-.read-btn { text-decoration: none; color: #005499; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 2px solid #005499; padding-bottom: 4px; display: inline-block; width: max-content; transition: all 0.2s ease; font-family: 'Segoe UI', sans-serif; }
-.read-btn:hover { color: #003d70; border-bottom-color: #003d70; padding-left: 5px; }
-
-/* Slate Minimalist Footer System */
-footer { background: #0f172a; color: #94a3b8; padding: 75px 0 40px 0; font-size: 15px; font-family: 'Segoe UI', Arial, sans-serif; border-top: 4px solid #005499; }
+/* Slate Minimalist Footer */
+footer { background: #0f172a; color: #94a3b8; padding: 70px 8% 30px 8%; font-size: 15px; font-family: 'Segoe UI', sans-serif; border-top: 4px solid #005499; text-align: center; }
 footer p { margin-bottom: 12px; }
-footer strong { color: #ffffff; font-family: 'Times New Roman', serif; font-size: 18px; letter-spacing: 0.5px; }
-.copyright { margin-top: 45px; font-size: 13px; color: #64748b; letter-spacing: 0.5px; text-align: center; border-top: 1px solid #1e293b; padding-top: 25px; }
+footer strong { color: #ffffff; font-family: 'Times New Roman', serif; font-size: 18px; }
+.copyright { margin-top: 40px; font-size: 13px; color: #64748b; border-top: 1px solid #1e293b; padding-top: 20px; }
 
-/* Bulletproof Mobile Adaptability */
-@media (max-width: 968px) {
-    header { padding: 20px 4%; }
-    .features-grid, .library-grid, .stats { flex-direction: column; gap: 35px; }
+/* Mobile View Rules */
+@media (max-width: 768px) {
+    header, .features-grid, .library-grid, .stats { flex-direction: column; gap: 35px; text-align: center; }
     .feature-card, .library-card { text-align: center; }
     .library-card { border-left: none; border-top: 4px solid #005499; }
-    .library-card h3 { padding-right: 0; }
-    .card-badge { position: relative; top: 0; right: 0; display: inline-block; margin-bottom: 15px; width: max-content; margin: 0 auto 15px auto; }
-    .hero-overlay h1 { font-size: 36px; }
+    .hero-overlay h1 { font-size: 34px; }
     .read-btn { margin: 0 auto; }
-    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    nav a { margin: 5px 10px; }
 }
